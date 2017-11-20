@@ -6,7 +6,10 @@ import 'vuetify/dist/vuetify.css'
 import App from './App'
 import store from './store'
 
-// import Firebase from '../../credentials/secret/firebase.js'
+import { config } from '../../credentials/secret/firebase.js'
+
+let firebase = require('firebase')
+firebase.initializeApp(config)
 
 Vue.use(Vuetify)
 // Vue.use(Firebase)
