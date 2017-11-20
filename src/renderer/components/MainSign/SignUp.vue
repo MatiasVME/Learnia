@@ -27,13 +27,12 @@
         <v-checkbox
           label="Do you agree?"
           v-model="checkbox"
-          :error-messages="checkboxErrors"
           @change="$v.checkbox.$touch()"
           @blur="$v.checkbox.$touch()"
           required
         ></v-checkbox>
         <div class="elevation-1 mb-2">
-          <v-btn @click="submit" color="primary">submit</v-btn>
+          <v-btn color="primary">submit</v-btn>
           <v-btn @click="clear" color="primary">clear</v-btn>
         </div>
         <div class="elevation-1">

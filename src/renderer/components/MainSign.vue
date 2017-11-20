@@ -1,6 +1,6 @@
 <template>
   <v-app dark>
-    <v-toolbar fixed app :clipped-left="clipped">
+    <v-toolbar app>
       <v-toolbar-title v-text="title"></v-toolbar-title>
       <v-spacer></v-spacer>
       <v-toolbar-items>
@@ -20,7 +20,7 @@
         </v-container>
       </v-content>
     </main>
-    <v-footer :fixed="fixed" app>
+    <v-footer app>
       <v-spacer></v-spacer>
       <span>Learnia (&copy; 2017)</span>
     </v-footer>
