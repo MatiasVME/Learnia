@@ -12,3 +12,6 @@ thumbs.db
 
 # Linux
 .directory
+
+# Credentials
+credentials/secret
