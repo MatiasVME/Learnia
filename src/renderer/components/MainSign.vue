@@ -34,7 +34,7 @@
 import SignIn from '@/components/MainSign/SignIn'
 import SignUp from '@/components/MainSign/SignUp'
 
-import { fuiStart } from '../../firebase/firebaseUtilities.js'
+// import Firebase from '../../firebase/firebaseUtilities.js'
 
 export default {
   components: {
@@ -45,8 +45,10 @@ export default {
     title: 'LearniaInteractive'
   }),
   mounted: function () {
-    fuiStart()
     console.log('test')
+  },
+  methods: {
+
   }
 }
 </script>

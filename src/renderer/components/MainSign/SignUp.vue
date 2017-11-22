@@ -13,7 +13,7 @@
         ></v-text-field>
         
         <v-text-field
-          name="input-10-1"
+          id="password"
           label="Enter your password"
           hint="At least 8 characters"
           v-model="password"
@@ -48,6 +48,8 @@
 </style>
 
 <script>
+// import Firebase from '../../../firebase/firebaseUtilities.js'
+
 export default {
   data: () => ({
     valid: true,

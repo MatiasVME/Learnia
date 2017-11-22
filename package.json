@@ -58,7 +58,6 @@
   "dependencies": {
     "axios": "^0.16.1",
     "firebase": "^4.6.2",
-    "firebaseui": "^2.4.1",
     "vue": "^2.4.2",
     "vue-electron": "^1.0.6",
     "vuetify": "0.17.1",
