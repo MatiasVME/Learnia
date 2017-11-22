@@ -10,15 +10,14 @@
       </v-toolbar-items>
     </v-toolbar>
     <main>
-      <v-content>
-        <v-container grid-list-xl text-xs-center>
-          <v-layout row wrap>
-            <v-flex xs10 offset-xs1>
-              <sign-up></sign-up>
-            </v-flex>
-          </v-layout>
-        </v-container>
-      </v-content>
+      <v-container grid-list-xl text-xs-center>
+        <v-layout row wrap>
+          <v-flex xs10 offset-xs1>
+            <sign-up></sign-up>
+            <div id="firebaseui-auth-container">sd</div>
+          </v-flex>
+        </v-layout>
+      </v-container>
     </main>
     <v-footer app>
       <v-spacer></v-spacer>
@@ -27,13 +26,15 @@
   </v-app>
 </template>
 
-<style lang="sass" scoped>
+<style>
 
 </style>
 
 <script>
 import SignIn from '@/components/MainSign/SignIn'
 import SignUp from '@/components/MainSign/SignUp'
+
+import { fuiStart } from '../../firebase/firebaseUtilities.js'
 
 export default {
   components: {
@@ -42,6 +43,10 @@ export default {
   },
   data: () => ({
     title: 'LearniaInteractive'
-  })
+  }),
+  created: function () {
+    fuiStart()
+    console.log('test')
+  }
 }
 </script>
