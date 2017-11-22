@@ -17,6 +17,5 @@
 
 <style>
   @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons');
-  @import url("../../node_modules/firebaseui/dist/firebaseui.css");
   /* Global CSS */
 </style>
