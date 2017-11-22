@@ -44,7 +44,7 @@ export default {
   data: () => ({
     title: 'LearniaInteractive'
   }),
-  created: function () {
+  mounted: function () {
     fuiStart()
     console.log('test')
   }
